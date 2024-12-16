@@ -6,13 +6,14 @@ html {
     margin: 0;
 }
 body {
-    background-color: #ece8de;
+    background-color: #f1efec;
     width: 100%;
     max-width: 100%;
     height: 100%;
 }
 main {
-    width: 1400px;
+    width: 90%;
+    max-width: 1400px;
     height: auto;
     margin: 0 auto;
 }
@@ -46,8 +47,8 @@ header {
 }
 /* thumbnail */
 #thumbnail-container {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     position: relative;
 }
 .thumbnail-img {
@@ -111,12 +112,14 @@ header {
     max-width: calc(100% - 40px);
 }
 .rank-contents img {
-    width: calc(60% - 20px);
-    max-width: calc(60% - 20px);
-    height: 100%;
+    width: 500px;
+    max-width: 60%;
+    height: 300px;
     border-radius: 16px;
     margin: 0 20px 0 0;
     flex: none;
+    background-position: center;
+    object-fit: cover;
 }
 .sub-contents {
     align-items: flex-start;
@@ -127,7 +130,7 @@ header {
 }
 .rank-name {
     color: #333;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700;
     height: auto;
     line-height: 1.4;
@@ -136,17 +139,34 @@ header {
     max-width: 100%;
     justify-content: flex-start;
 }
-.aria,.genre {
-    color: #333;
+    
+.genre-box {
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0 0 0;
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    background-color: #f3f4f6;
+}
+.genre {
+    background-color: #2D3B56;
+    color: #D9E5EC;
     font-size: 18px;
     font-weight: 400;
-    height: auto;
     line-height: 1.4;
-    margin: 15px 0 0 0;
-    text-align: left;
-    width: auto;
-    max-width: 100%;
     justify-content: flex-start;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: auto;
+    border-radius: 9999px;
+    padding: 0 1rem;
 }
 .price,.like{
     display: flex;
@@ -328,7 +348,7 @@ header {
     font-weight: 700;
     height: auto;
     line-height: 1.4;
-    margin: 0 0 0 40px;
+    margin: 0 0 0 20px;
     text-align: left;
     width: auto;
     max-width: calc(100% - 40px);
@@ -367,6 +387,7 @@ header {
     border-radius: 16px 16px 0 0;
     height: 200px;
     width: 100%;
+    background-position: center;
 }
 .slide-contents-text {
     align-content: flex-start;
@@ -435,11 +456,90 @@ header {
 }
 
 
+
 /* footer */
 footer {
     align-items: center;
-    padding: 64px;
+    background-color: rgba(0,0,0,0);
+    display: flex;
     flex: none;
-    width: 100%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: auto;
+    justify-content: flex-start;
+    padding: 64px 0;
+    width: 90%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+#footer-container {
+    align-items: center;
+    display: flex;
+    flex: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: auto;
+    justify-content: center;
+    width: auto;
+    max-width: 100%;
+    margin: 0 0 0 20px;
+}
+#footer-top {
+    align-items: center;
+    flex: none;
+    flex-wrap: nowrap;
+    height: auto;
+    justify-content: flex-start;
+    margin: 0 32px 0 0;
+    width: auto;
+    max-width: calc(100% - 32px);
+}
+#footer-contents-box {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex: none;
+    flex-wrap: nowrap;
+    height: auto;
+    justify-content: center;
+    width: auto;
     max-width: 100%;
 }
+.footer-contents {
+    align-items: center;
+    flex: none;
+    flex-wrap: nowrap;
+    height: auto;
+    justify-content: flex-start;
+    margin: 0 16px 0 0;
+    width: auto;
+    max-width: calc(100% - 16px);
+}
+#footer-top p,.footer-contents p {
+    color: #333;
+    font-size: 16px;
+    font-weight: 400;
+    height: auto;
+    letter-spacing: 0.05em;
+    line-height: 1.2;
+    text-align: left;
+    width: auto;
+    max-width: 100%;
+    justify-content: flex-start;
+}
+
+
+
+
+/* single.php */
+
+#restaurant-name {
+    align-items: flex-start;
+    background-color: transparent;
+    flex: none;
+    height: auto;
+    justify-content: flex-start;
+    width: 90%;
+    max-width: 90%;
+}
+
