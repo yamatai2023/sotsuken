@@ -1,14 +1,13 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html>
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="reset.css">
+    <link href="reset.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
     <title>Document</title>
 </head>
-<!-- <body <?php body_class();?>> -->
-    <body>
+<body>
     <header>
         <div id="header-container">
             <div class="header-contents">
@@ -25,7 +24,8 @@
             </div>
         </div>
     </header>
-    <!-- <?php get_header();?> -->
+    <!-- ▲ ヘッダー : 終了-->
+
     <!-- ▼ コンテンツ : 開始-->
     <div id="thumbnail-container">
         <div class="thumbnail-img"></div>
@@ -42,11 +42,14 @@
             <div id="rank-container">
                 <div id="rank-main">
                     <div class="rank-contents" id="contents-no1">
-                        <img src="https://placehold.jp/500x300.png">
+                        <img src="https://cdn.discordapp.com/attachments/1270358128512339989/1313395897245368330/IMG_8679.jpg?ex=6760757f&is=675f23ff&hm=a933c3124da8bbac86f9d158000755382b1fa85c6794b01a0f5bf96c2d6b9d2b&">
                         <div class="sub-contents">
-                            <h2 class="rank-name">TEXTTEXT</h2>
-                            <p class="aria">text</p>
-                            <p class="genre">text</p>
+                            <h2 class="rank-name">横浜チーズカフェ</h2>
+                            <div class="genre-box">
+                                <p class="genre">text</p>
+                                <p class="genre">text</p>
+                                <p class="genre">text</p>
+                            </div>
                             <div class="price">
                                 <p>&yen;1.000〜2.000</p>
                             </div>
@@ -56,11 +59,14 @@
                         </div>
                     </div>
                     <div class="rank-contents" id="contents-no2">
-                        <img src="https://placehold.jp/500x300.png">
+                        <img src="https://cdn.discordapp.com/attachments/1270358128512339989/1313395897245368330/IMG_8679.jpg?ex=6760757f&is=675f23ff&hm=a933c3124da8bbac86f9d158000755382b1fa85c6794b01a0f5bf96c2d6b9d2b&">
                         <div class="sub-contents">
-                            <h2 class="rank-name">TEXTTEXT</h2>
-                            <p class="aria">text</p>
-                            <p class="genre">text</p>
+                            <h2 class="rank-name">大かまど飯 寅福 横浜ジョイナス店</h2>
+                            <div class="genre-box">
+                                <p class="genre">text</p>
+                                <p class="genre">text</p>
+                                <p class="genre">text</p>
+                            </div>
                             <div class="price">
                                 <p>&yen;1.000〜2.000</p>
                             </div>
@@ -70,11 +76,14 @@
                         </div>
                     </div>
                     <div class="rank-contents" id="contents-no3">
-                        <img src="https://placehold.jp/500x300.png">
+                        <img src="https://cdn.discordapp.com/attachments/1270358128512339989/1313395897245368330/IMG_8679.jpg?ex=6760757f&is=675f23ff&hm=a933c3124da8bbac86f9d158000755382b1fa85c6794b01a0f5bf96c2d6b9d2b&">
                         <div class="sub-contents">
-                            <h2 class="rank-name">TEXTTEXT</h2>
-                            <p class="aria">text</p>
-                            <p class="genre">text</p>
+                            <h2 class="rank-name">横浜チーズカフェ</h2>
+                            <div class="genre-box">
+                                <p class="genre">text</p>
+                                <p class="genre">text</p>
+                                <p class="genre">text</p>
+                            </div>
                             <div class="price">
                                 <p>&yen;1.000〜2.000</p>
                             </div>
@@ -83,6 +92,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
                 <div id="rank-search">
                     <div id="search-container">
@@ -128,15 +138,15 @@
                                 </label>
                                 <label>
                                     <input type="radio" name="italy">
-                                    <span>1,000~2,000</span>
+                                    <span>1,000〜2,000</span>
                                 </label>
                                 <label>
                                     <input type="radio" name="chinese">
-                                    <span>中華</span>
+                                    <span>2.000〜5.000</span>
                                 </label>
                                 <label>
                                     <input type="radio">
-                                    <span>text</span>
+                                    <span>5.000〜</span>
                                 </label>
                             </div>
                         </div>
@@ -262,7 +272,6 @@
             </div>
         </section>
     </main>
-<!-- <?php get_footer();?> -->
     <!-- ▼ フッター : 開始-->
     <footer>
         <div id="footer-container">   
@@ -286,6 +295,5 @@
         </div>
     </footer>
 <!-- ▲ フッター : 終了-->
-<!-- <?php wp_footer(); ?> -->
 </body>
 </html>
